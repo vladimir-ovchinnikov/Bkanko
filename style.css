@@ -1,0 +1,93 @@
+.header{
+    background-color: #000000;
+display: flex;
+justify-content: space-between;
+padding-left:  320px;
+padding-right: 320px;
+}
+/* background-color - задний фон */
+.header__mail, .header__link{
+    color: #FFFFFF;
+    text-decoration: none; 
+    font-family: "Roboto", serif;
+}
+/* color - цвет
+text-decoration: none; - убрать подчеркивание
+font-family - семейство шрифтов 
+serif - с засечками
+display: flex; - поставить в ряд*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

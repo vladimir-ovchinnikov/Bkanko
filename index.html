@@ -6,10 +6,31 @@
     <title>Blanko</title>
     <link rel="stylesheet" href="style.css">
     <!--linkcss-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header>        
+    <!-- !(tub)  для открытия верхних кнопок-->
+    <header class="header"> 
+        <div class="header__block"><a href="#" class="header__logo">
+            <img src="./images/logo.svg" alt="Blanko">
+            <!-- href="#", если ссылка оставляет на этой же странице,  -->
+            <!--src ссылка на картинку(откуда берем логатип)
+            alt - альтернатива, если  картинка логатипа не загрузится-->
+            </a>
+            <a href="mailto:mail@blanko.com" class="header__mail">mail@blanko.com</a>
+            <!--  <a href="mailto:mail@blanko.com" class="header__mail">Здесь пишется то что видит пользователь</a>-->
+            <!-- href="#", если ссылка оставляет на этой же странице,  --></div>
+<div class="header__block"><nav class="header__nav">
+    <!-- nav - навигация -->
+<a href="#" class="header__link">Landing</a>
+<a href="#" class="header__link">All pages</a>
+<a href="#" class="header__link">Template</a>
+<!--<a href="" class="header__link"> разделы меню, ссылка внутри хедера</a>  -->
+<a href="#" class="header__btn">Purchase template</a>
+</nav></div>
+
     </header>
 </body>
 </html>
-<!-- !(tub)  для открытия верхних кнопок-->
