@@ -1,31 +1,71 @@
+body{
+    margin: 0;
+}
 .header{
     background-color: #000000;
 display: flex;
 justify-content: space-between;
 padding-left:  320px;
 padding-right: 320px;
+align-items: center;
+padding-top: 16px;
+padding-bottom: 16px;
+/*  align-items: center; - выравниевание элементов по вертикали по центру
+justify-content: space-between - равномерно распределяет элементы вдоль главной оси контейнера*/
 }
 /* background-color - задний фон */
 .header__mail, .header__link{
     color: #FFFFFF;
     text-decoration: none; 
     font-family: "Roboto", serif;
+    font-size: 16px;
+     /* font-size: 16px; -размер шрифта */
 }
 /* color - цвет
 text-decoration: none; - убрать подчеркивание
 font-family - семейство шрифтов 
 serif - с засечками
 display: flex; - поставить в ряд*/
+.header__block{
+    /* обращаемся к ним ибо дивы - "родители" они встали на место, а их "дети" в хаусе */
+    align-items: center;
+    /*  align-items: center; - выравниевание элементов по вертикали по центру*/
+    display: flex;
+    /* display: flex; - поставить в ряд */
+}
+.header__logo{
+    margin-right: 65px;
+}
+.header__btn{
+    margin-left: 65px;
+    text-decoration: none;
+    background-color: #FF7143;
+    /* background-color: FF7143; - задний фон - оранжевый
+    text-decoration: none; - убрать подчеркивание */
+    color: #000000;
+    padding: 12px 32px;
+    /* padding - внутренний отступ */
+    white-space: nowrap;
+    /* white-space: nowrap; - запрещает всавать во 2 ряд */
+    border-radius: 6px; /* скруглить уголки */
+    font-family: "Roboto", serif;
+/*font-family - семейство шрифтов
+  serif - с засечками */
+  font-weight: 600 ;
+  /* font-weight - жирность текста  */
+  font-size: 16px;
+  /* font-size: 16px; -размер шрифта */
+}
+.header__link{
+    margin-left: 20px;
+    /* все отступают как близнецы, потому что у них у всех один класс */
+}
 
-
-
-
-
-
-
-
-
-
+.header__mail{
+    padding: 4px 8px;
+    background-color:rgba(255, 255, 255, 0.12);
+    border-radius: 4px;
+}
 
 
 
