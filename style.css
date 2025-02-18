@@ -12,6 +12,10 @@ justify-content: space-between;
 align-items: center;
 padding-top: 16px;
 padding-bottom: 16px;
+position: fixed;
+left: 0;
+right: 0;
+/* position: fixed; - чтобы хедер не пролистывался */
 /*  align-items: center; - выравниевание элементов по вертикали по центру
 justify-content: space-between - равномерно распределяет элементы вдоль главной оси контейнера*/
 }
@@ -122,15 +126,15 @@ margin-left: 40px;
 @media( max-width: 900px){
     .header__mail,.header__btn,.header__nav{
         display: none;
-        /* diplay - иpображение, none - отсутсвие */
+        /* display - изображение, none - отсутсвие */
     }
     .header__burger{
         display: block;
     }
     }
 .block{
-    padding-left: 50px;
-    padding-right:50px ;
+    padding-left: 320px;
+    padding-right:320px ;
 }
 @media( max-width: 320px){
     .block{
@@ -139,23 +143,233 @@ margin-left: 40px;
     }
 .header__logo{
     width: 80px;
-
 }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+.intro{
+    background-color: #FF7143;
+    display: flex;
+    /* display: flex; - поставить в ряд */
+    justify-content: space-between;
+     /* justify-content: space-between - равномерно распределяет элементы вдоль главной оси 
+      контейнера*/ 
+      align-items: center;
+      /*align-items: center; - выравниевание элементов по вертикали по центру */
+      height: 100vh;
+      /*  height: 100vh; - занимает весь экран*/
+}
+.intro__title{
+    font-family: "Roboto", serif;
+   font-size: 72px;
+   font-weight: 600;
+   margin-bottom: 27px;
+    /*
+font-family - семейство шрифтов 
+serif - с засечками
+font-weight: - жирность шрифта
+ font-size- размер шрифта
+*/
+}
+.Intro__descr{
+    font-size: 18px;
+    max-width: 587px;
+    margin-bottom: 22px;
+}
+.intro__btn{ 
+    border-radius: 6px;
+    padding: 20px 32px;
+    text-decoration: none;
+     /* text-decoration: none; - убрать подчеркивание */
+     font-weight: 600;
+     /* font-weight: - жирность шрифта */
+     font-size: 18px;
+     /* font-size- размер шрифта */
+    margin-left: 8px;
+}
+.intro__text{
+    text-align: center;
+/* text-align: center; - выравниевает по центру горизонтали */
+margin-right: 25px;
+}
+.intro__btn--black{
+background-color: black;
+color: #FFFFFF;
+}
+.intro__btn--white{
+background-color: #FFFFFF;
+color: black;
+}
+.intro__buttons{
+    display: flex;
+    /* display: flex; - поставить в ряд */
+    justify-content: center;
+}
+.intro__img{
+    height: 100%;
+}
+@media(max-width: 1800px){
+    .intro__title{
+        font-size: 65px;
+        /* font-size- размер шрифта */
+    }
+}
+@media(max-width: 1750px){
+    .intro__btn{
+        padding: 17px 30px;
+    }
+    .intro__img{
+       width: 385px;
+    }
+}
+@media(max-width: 1650px){
+    .intro__btn{
+        padding: 17px 25px;
+    }
+    .intro__img{
+       width: 360px;
+    }
+    .intro__title{
+        font-size: 50px;
+        /* font-size- размер шрифта */
+    }
+    .intro__text{
+        max-width: 480px;
+    }
+}
+@media(max-width: 1550px){
+    .intro__btn{
+        padding: 17px 20px;
+    }
+    .intro__img{
+       width: 310px;
+    }
+    .intro__title{
+        font-size: 45px;
+        /* font-size- размер шрифта */
+    }
+    .intro__text{
+        max-width: 430px;
+    }
+    .block{
+        padding-left: 250px;
+        padding-right: 250px ;
+}
+@media(max-width: 1430px){
+    .intro__btn{
+        padding: 15px 15px;
+    }
+    .intro__img{
+       width: 270px;
+    }
+    .intro__title{
+        font-size: 45px;
+        /* font-size- размер шрифта */
+    }
+    .intro__text{
+        max-width: 430px;
+    }
+    .block{
+        padding-left: 220px;
+        padding-right: 220px ;
+    }
+}
+@media(max-width: 1350px){
+    .intro__btn{
+        padding: 15px 15px;
+    }
+    .intro__img{
+       width: 240px;
+    }
+    .intro__title{
+        font-size: 30px;
+        /* font-size- размер шрифта */
+    }
+    .intro__text{
+        max-width: 400px;
+    }
+    .block{
+        padding-left: 190px;
+        padding-right: 190px ;
+}
+@media(max-width: 1100px){
+    .intro__btn{
+        padding: 15px 15px;
+    }
+    .intro__img{
+       width: 240px;
+    }
+    .intro__title{
+        font-size: 30px;
+        /* font-size- размер шрифта */
+    }
+    .intro__text{
+        max-width: 400px;
+    }
+    .block{
+        padding-left: 130px;
+        padding-right: 130px ;
+}
+}
+@media(max-width: 1000px){
+    .intro__btn{
+        padding: 15px 15px;
+    }
+    .intro__img{
+       width: 220px;
+    }
+    .intro__title{
+        font-size: 25px;
+        /* font-size- размер шрифта */
+    }
+    .intro__text{
+        max-width: 390px;
+    }
+    .block{
+        padding-left: 100px;
+        padding-right: 100px ;
+}
+}
+@media(max-width: 850px){
+    .intro__btn{
+        width: 100%;
+        padding-top:14px ;
+        padding-bottom: 14px;
+        text-align: center;
+    }
+    .intro__img{
+       display: none;
+    }
+    .intro__title{
+        font-size: 25px;
+        /* font-size- размер шрифта */
+        text-align: center;
+    }
+    .intro__text{
+        max-width: 450px;
+        text-align: center;
+        margin-right: 0px;
+    }
+    .block{
+        padding-left: 50px;
+        padding-right: 50px ;
+}
+.intro{
+    justify-content: center;
+}
+}
+@media(max-width: 320px){
+    .intro__buttons{
+        flex-direction: column;
+/*  flex-direction: column; - поставть в столбик */
+    }  
+    }
+    .intro__title{
+        font-size: 25px;
+        /* font-size- размер шрифта */
+        text-align: center;
+    }
+    .intro__btn{
+        width: 100%;
+}
 
 
 
